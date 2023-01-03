@@ -1,0 +1,148 @@
+
+html,
+body {
+    margin: auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    max-width: 500px
+    
+}
+/* ----- LAYOUT ----- */
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white, whitesmoke);
+   
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1em .5em;
+    height: 8%;
+}
+section{
+    text-align: center;
+    background-color: transparent;
+    height: 10%;
+    padding: 1em
+}
+#main{
+    margin: 0;
+    padding: 0;
+    max-width: 768px;
+}
+.logo{
+    width: 5em;
+    height: 2.5em;
+    cursor: pointer;
+}
+.icon{
+    width: 2.25em;
+    height: 2.25em;
+    cursor: pointer;
+}
+.icon-sec{
+    height: 2.25em;
+    width: 2.4em;
+    padding: em;
+}
+.profile-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    
+}
+#profile-card{
+    height: 70vh;
+    width: 95vw;
+    margin: 1vh auto;
+    border-radius: 15px;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+#badge-like{
+    display: none;
+}
+#badge-nope{
+    display: none;
+}
+/* ----- TYPOGRAPHY ----- */
+.name{
+    position: relative;
+    bottom: 2.5em;
+    left: 10px;
+    color: #F8F8F8;
+    font-size: 1.5rem;
+    
+}
+.bio{
+    position: relative;
+    bottom: 3.5em;
+    left: 10px;
+    color: #B7B7B7;
+    font-size: 1rem;
+}
+.badge-like{
+    position: absolute;
+    top: 10em;
+    left: 2em;
+    margin: auto;
+    transform: rotate(-45deg);
+    width: 200px;
+    height: 100px;
+
+}
+.badge-nope{
+    position: absolute;
+    top: 10em;
+    right: 2em;
+    margin: auto;
+    transform: rotate(45deg);
+    width: 200px;
+    height: 100px;
+}
+.noMore{
+    background-color: gray;
+    color: white;
+    height: 70vh;
+    width: 95vw;
+    margin: 1vh auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 8em 1em;
+}
+h3{
+  font-size: 2.5em;   
+}
+/* ----- LINKS ----- */
+.btn{
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 2px 2px 20px #E9E9EA;
+    margin: auto .5em;
+}
+
+.btn:hover{
+    cursor: pointer;
+    
+}
+#nope-btn:hover{
+    background-color: #FFE7EF;
+}
+#like-btn:hover{
+    background-color: #DBFFF4;
+}
+/* ----- MEDIA QUERIES ----- */
+@media (min-width: 768px) {
+    #profile-card{
+        max-width: fit-content;
+    }
+
+}
